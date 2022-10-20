@@ -1,3 +1,8 @@
+a {
+  color: #1d69d6;
+  text-decoration: none;
+}
+
 .Weather .weather-contanier {
   background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
   border-radius: 20px;
