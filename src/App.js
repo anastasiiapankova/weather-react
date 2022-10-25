@@ -11,7 +11,7 @@ function App() {
           <a
             href="https://github.com/anastasiiapankova/weather-react"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener"
           >
             Open-sours code
           </a>
@@ -19,7 +19,7 @@ function App() {
           <a
             href="https://jocular-horse-47f841.netlify.app"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener"
           >
             Netlify
           </a>
