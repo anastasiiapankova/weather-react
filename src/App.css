@@ -1,20 +1,15 @@
-a {
-  color: #1d69d6;
-  text-decoration: none;
+body {
+  background: radial-gradient(
+    592px at 48.2% 50%,
+    rgba(255, 255, 249, 0.6) 0%,
+    rgb(160, 199, 254) 74.6%
+  );
+  background-image: url("weather.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.Weather .weather-contanier {
-  background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
-  border-radius: 20px;
-  font-family: "Fuzzy Bubbles", cursive;
-  font-size: 18px;
-  margin: 20px 0;
-  max-width: 630px;
-  padding: 20px 16px 24px;
-  opacity: 0.9;
-}
-
-.Weather .contanier {
+.contanier {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
@@ -24,41 +19,16 @@ a {
   max-width: 740px;
 }
 
-.Weather .overview {
-  margin-bottom: 20px;
+.App {
+  max-width: 630px;
+  margin: 0 auto;
 }
 
-#search-button {
-  background-color: #589eb8;
-  border-color: #589eb8;
+.App footer {
+  font-size: 14px;
+  margin: 10px 0;
+  text-decoration: none;
 }
-#current-button {
-  background-color: #edbd33;
-  border-color: #edbd33;
-}
-#current-city {
-  font-size: 34px;
-  font-weight: bold;
-}
-
-.Weather .weather-temperature img {
-  margin-right: 10px;
-  height: 64px;
-  width: 64px;
-}
-
-.Weather .weather-temperature strong {
-  font-size: 64px;
-  line-height: 1;
-  font-weight: 400;
-}
-
-.Weather .weather-temperature .active {
-  color: black;
-  cursor: default;
-}
-.Weather .weather-temperature .units {
-  position: relative;
-  font-size: 24px;
-  top: -4px;
+.App a {
+  text-decoration: none;
 }

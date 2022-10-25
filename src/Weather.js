@@ -1,5 +1,5 @@
 import React from "react";
-import "./App.css";
+import "./Weather.css";
 
 export default function Weather() {
   let weatherData = {
@@ -14,70 +14,65 @@ export default function Weather() {
 
   return (
     <div className="Weather">
-      <div className="weather-contanier">
-        <div className="Search">
-          <form>
-            <div className="row g-3">
-              <div className="col-sm-6">
-                <input
-                  type="text"
-                  className="form-control"
-                  placeholder="Type your city..."
-                  autoComplete="off"
-                />
-              </div>
-              <div className="col-sm-2">
-                <button
-                  type="submit"
-                  className="btn btn-primary"
-                  id="search-button"
-                >
-                  Search
-                </button>
-              </div>
-              <div className="col-sm-2">
-                <button
-                  type="button"
-                  className="btn btn-primary"
-                  id="current-button"
-                >
-                  Current
-                </button>
-              </div>
-            </div>
-          </form>
+      <form>
+        <div className="row g-3">
+          <div className="col-sm-6">
+            <input
+              type="text"
+              className="form-control"
+              placeholder="Type your city..."
+              autoFocus="on"
+            />
+          </div>
+          <div className="col-sm-2">
+            <input
+              type="submit"
+              value="Search"
+              className="btn btn-primary"
+              id="search-button"
+            />
+          </div>
+          <div className="col-sm-2">
+            <input
+              type="button"
+              value="Current"
+              className="btn btn-primary"
+              id="current-button"
+            />
+          </div>
         </div>
-        <h1>{weatherData.city}</h1>
-        <ul>
-          <li>{weatherData.date}</li>
-          <li>{weatherData.description}</li>
-        </ul>
+      </form>
 
-        <div className="row">
-          <div className="col-6">
-            <div className="d-flex weather-temperature">
-              <img src={weatherData.imgUrl} alt={weatherData.description} />
-              <strong>{weatherData.temperature}</strong>
-              <span className="units">
-                <a href="/" className="active" rel="noreferrer">
-                  °C
-                </a>
-                |
-                <a href="/" rel="noreferrer">
-                  °F
-                </a>
-              </span>
-            </div>
-          </div>
-          <div className="col-6">
-            <ul>
-              <li>{weatherData.humidity}</li>
-              <li>{weatherData.wind}</li>
-            </ul>
+      <h1>{weatherData.city}</h1>
+      <ul>
+        <li>{weatherData.date}</li>
+        <li>{weatherData.description}</li>
+      </ul>
+
+      <div className="row mt-3">
+        <div className="col-6">
+          <div className="d-flex weather-temperature">
+            <img src={weatherData.imgUrl} alt={weatherData.description} />
+            <strong>{weatherData.temperature}</strong>
+            <span className="units">
+              <a href="/" className="active" rel="noreferrer">
+                °C
+              </a>
+              |
+              <a href="/" rel="noreferrer">
+                °F
+              </a>
+            </span>
           </div>
         </div>
-        <div className="weather-forecast"></div>
+        <div className="col-6">
+          <ul>
+            <li>{weatherData.humidity}</li>
+            <li>{weatherData.wind}</li>
+          </ul>
+        </div>
       </div>
+      <div className="weather-forecast"></div>
     </div>
   );
 }
