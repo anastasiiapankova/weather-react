@@ -21,6 +21,7 @@ function App() {
             target="_blank"
             rel="noopener noreferrer"
           >
+            {" "}
             Netlify
           </a>
         </footer>
