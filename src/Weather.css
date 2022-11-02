@@ -23,19 +23,8 @@
 }
 
 #search-button {
-  background-color: #589eb8;
-  border-color: #589eb8;
-}
-#current-button {
   background-color: #edbd33;
   border-color: #edbd33;
-}
-
-.Weather canvas {
-  color: #589eb8;
-  margin-right: 10px;
-  height: 64px;
-  width: 64px;
 }
 
 .Weather strong {
